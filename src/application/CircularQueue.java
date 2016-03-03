@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * @author
+ * @author Ahmad and Michael
  * 
  */
 public class CircularQueue<E> implements FixedSizeQueueInterface<E> {
