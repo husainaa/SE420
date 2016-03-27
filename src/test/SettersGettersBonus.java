@@ -10,27 +10,16 @@ import org.junit.Test;
 import application.CommissionCalculator;
 import application.SalesTransaction;
 
+/**
+ * @author Ahmad Husain
+ * This is test class to test setters and getters and the calculate bonus commission
+ */ 
+public class SettersGettersBonus {
 
-public class CommissionTester {
-
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
 	
-	
-	// Test Suite to test setters and getters
+	/**
+	 * Test Suite to test setters and getters
+	 */
 	@Test
 	public void SettersAndGetters() {
 		
@@ -65,7 +54,10 @@ public class CommissionTester {
 		assertEquals(200,c.getTotalSales(),0);
 	}
 	
-	// Test suite to test calculateBonusCommission()
+	
+	/**
+	 * Test suite to test calculateBonusCommission()
+	 */
 	@Test
 	public void BonusCommissionCalculatorTester(){
 		
