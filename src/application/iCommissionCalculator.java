@@ -19,7 +19,7 @@ public interface iCommissionCalculator {
 	
 	public static final int MAINTENANCE_ITEM = 1;
 	
-	public static final int REPLACEMNET_ITEM = 2;
+	public static final int REPLACEMNET_ITEM = 2; // There was a duplication here, was 3 changed to 2
 	
 	public static final int CONSULTING_ITEM = 3;
 	
