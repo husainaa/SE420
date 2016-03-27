@@ -12,13 +12,16 @@ import application.CommissionCalculator;
 
 
 
+/**
+ * @author lenovo
+ * This method is for testing the class method calculateCommission of the class CommissionCalculator
+ * using junit test cases.
+ */
 public class CalculateCommissionTester {
 	CommissionCalculator cProbLow;
 	CommissionCalculator cProbCom;
-	CommissionCalculator cProbBon;
 	CommissionCalculator cExpLow;
 	CommissionCalculator cExpCom;
-	CommissionCalculator cExpBon;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -31,25 +34,16 @@ public class CalculateCommissionTester {
 
 	@Before
 	public void setUp() throws Exception {
-		//create employees to calculate commissions. This is using equivalence partitioning
-		
-		/*
-		CommissionCalculator cProbCom = new CommissionCalculator("Mike",0);
-		cProbCom.addSale(1, 2001);
-		
-		CommissionCalculator cProbBon = new CommissionCalculator("Roy",0);
-		cProbBon.addSale(2, 50001);
-	
-		CommissionCalculator cExpBon = new CommissionCalculator("Bart",1);
-		cExpBon.addSale(3, 100001);
-		*/
-
 	}
 
 	@After
 	public void tearDown() throws Exception {
 	}
 	
+	/**
+	 * This method creates an employee with a sales record, it then checks for proper
+	 * return from the CommissionCalculator class method calculateCommission
+	 */
 	@Test
 	public void testCommissionCalculator(){
 		CommissionCalculator cProbLow = new CommissionCalculator("Ned",0);
