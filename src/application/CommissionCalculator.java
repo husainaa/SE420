@@ -202,10 +202,31 @@ public class CommissionCalculator implements iCommissionCalculator {
 		}
 		return retVal;
 	}
+	
+	// Added a getter method to test sales bonus minimum amount
+	@Override
+	public double getMinimumSalesForBonus() {
+		double retVal = 0;
+		if (this.employeeExperience == iCommissionCalculator.PROBATIONARY) {
+			retVal = CommissionCalculator.MINIMUM_PROBATIONARY_SALES_FOR_BONUS_COMMISSION;
+		} else if (this.employeeExperience == iCommissionCalculator.EXPERIENCED) {
+			retVal = CommissionCalculator.MINIMUM_EXPERIENCED_SALES_FOR_BONUS_COMMISSION;
+		} else {
+			retVal = 0.00;
+
+		}
+		return retVal;
+	}
 
 	@Override
 	public String getName() {
 		return this.employeeName;
+	}
+	
+	// Added a getter method to test setExperience()
+	@Override
+	public int getExperience() {
+		return this.employeeExperience;
 	}
 
 }

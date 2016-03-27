@@ -19,7 +19,7 @@ public interface iCommissionCalculator {
 	
 	public static final int MAINTENANCE_ITEM = 1;
 	
-	public static final int REPLACEMNET_ITEM = 3;
+	public static final int REPLACEMNET_ITEM = 2;
 	
 	public static final int CONSULTING_ITEM = 3;
 	
@@ -28,6 +28,12 @@ public interface iCommissionCalculator {
 	 * @return The name of the salesman will be returned.
 	 */
 	public abstract String getName();
+	
+	/**
+	 * This method will obtain the experience of the salesman and return it for analysis.
+	 * @return The experience of the salesman will be returned.
+	 */
+	public abstract int getExperience();
 	
 	/**
 	 * This method will add a sale to the list of items that have been sold for the given month.
@@ -66,6 +72,12 @@ public interface iCommissionCalculator {
 	 * @return The minimum sales before a commission will be returned.
 	 */
 	public abstract double getMinimumSales();
+	
+	/**
+	 * This method will return the minimum sales that are necessary before a bonus will be paid.
+	 * @return The minimum sales before a bonus will be returned.
+	 */
+	public abstract double getMinimumSalesForBonus();
 	
 	
 	
