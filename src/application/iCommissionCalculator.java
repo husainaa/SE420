@@ -79,6 +79,4 @@ public interface iCommissionCalculator {
 	 */
 	public abstract double getMinimumSalesForBonus();
 	
-	
-	
 }
