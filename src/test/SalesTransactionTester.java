@@ -35,6 +35,8 @@ public class SalesTransactionTester {
 
 	@Before
 	public void setUp() throws Exception {
+		
+		
 	}
 
 	@After

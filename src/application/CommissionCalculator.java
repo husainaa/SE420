@@ -89,8 +89,8 @@ public class CommissionCalculator implements iCommissionCalculator {
 
 	@Override
 	public double calculateCommission() {
-		final double commissionRatesForProbationaryEmployee[] = { 2, 3,
-				1, 3 };
+		final double commissionRatesForProbationaryEmployee[] = { .02, .03,
+				.01, .03 };
 		final double commissionRatesForExperiencedEmployee[] = { 0.04, 0.06,
 				0.015, 0.08 };
 
